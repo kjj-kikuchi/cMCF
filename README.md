@@ -1,2 +1,3 @@
 # conformalized Mean Curvature Flow
-![demo](armadilo.gif)
+
+<img src = "armadilo.gif" width = 50%>
