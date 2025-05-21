@@ -11,7 +11,7 @@
 #include <fstream>
 #include "mesh.h"
 
-void read_obj(std::string const& filename, Mesh &mesh)
+inline void read_obj(std::string const& filename, Mesh &mesh)
 {
     std::ifstream ifs(filename);
     if (ifs.fail()) {
@@ -58,7 +58,7 @@ std::string remove_extension(std::string const& filename) {
     return p.string();
 }
 
-void write_obj(std::string filename, Mesh const& mesh)
+inline void write_obj(std::string filename, Mesh const& mesh)
 {
     std::ofstream of;
     filename = remove_extension(filename) + "_cmfc.obj";
@@ -75,7 +75,7 @@ void write_obj(std::string filename, Mesh const& mesh)
     of.close();
 }
 
-void write_vtk(std::string filename, Mesh const& mesh, Eigen::MatrixXd const& vertices, int idx)
+inline void write_vtk(std::string filename, Mesh const& mesh, Eigen::MatrixXd const& vertices, int idx)
 {
     std::ofstream of;
     filename = remove_extension(filename) + "_cmfc" + std::to_string(idx) +  ".vtk";

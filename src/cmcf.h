@@ -95,7 +95,7 @@ double mean_vertex_difference(Eigen::MatrixXd const& vertices,
 
 void compute(Mesh& mesh, std::vector<Eigen::MatrixXd> &mesh_list)
 {
-    int iter_num = std::pow(2, 9) + 1;
+    int iter_num = std::pow(2, 10) + 1;
     int snapshot_index = 1;
 
     mesh_list.push_back(mesh.V);

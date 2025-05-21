@@ -23,9 +23,9 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		D770C5E92DD723450020B9A7 /* cMCF */ = {
+		D770C5E92DD723450020B9A7 /* src */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = cMCF;
+			path = src;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -44,7 +44,7 @@
 		D770C5DE2DD723450020B9A7 = {
 			isa = PBXGroup;
 			children = (
-				D770C5E92DD723450020B9A7 /* cMCF */,
+				D770C5E92DD723450020B9A7 /* src */,
 				D770C5E82DD723450020B9A7 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -73,7 +73,7 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				D770C5E92DD723450020B9A7 /* cMCF */,
+				D770C5E92DD723450020B9A7 /* src */,
 			);
 			name = cMCF;
 			packageProductDependencies = (
@@ -245,6 +245,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				HEADER_SEARCH_PATHS = "/Users/kikuchiyusaku/eigen-3.4.0";
+				LIBRARY_SEARCH_PATHS = "/Users/kikuchiyusaku/eigen-3.4.0";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -253,6 +256,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				HEADER_SEARCH_PATHS = "/Users/kikuchiyusaku/eigen-3.4.0";
+				LIBRARY_SEARCH_PATHS = "/Users/kikuchiyusaku/eigen-3.4.0";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
